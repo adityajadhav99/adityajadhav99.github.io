@@ -1,2 +1,3 @@
 # adityajadhav99.github.io
-Hi!! This is the first time I am using Github .
+Hi!! I am a newbie to Github .
+I am student and I like to learn new things everyday.
