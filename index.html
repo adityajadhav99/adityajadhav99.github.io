@@ -11,7 +11,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Importing images -->
-        <link rel="shortcut icon" type="image/png" href="./Aditya1.png" >
+        <link rel="shortcut icon" type="image/png" href="./images/Aditya1.png" >
        
         <!-- META TAGS -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -20,7 +20,7 @@
         <!-- <meta name="" content=""> -->
        
         <meta property="og:title" content="Aditya's HomePage">
-        <meta property="og:image" content="./Aditya1.png">  <!--add image link here -->
+        <meta property="og:image" content="./images/Aditya1.png">  <!--add image link here -->
         <meta property="og:description" content="Aditya's HomePage">
         
 
@@ -54,27 +54,33 @@
                             <h3 class="text-white" style="text-align: left; font-family: 'Courier New', Courier, monospace;">Aditya Kailas Jadhav</h3>  
                         </div>
                         <div>
-                            <img src="./IIT-M logo.png"  style="width: 200px; height:90px;"align="right" >
+                            <img src="./images/IIT-M logo.png"  style="width: 200px; height:90px;"align="right" >
                         </div>
                     </div>
                     <div class="row mt-4 mb-4 text-center">
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="/">Home</a>
+                                    <a class="onHoverChange nav-link text-white oval" href="./index.html">Home</a>
                                 </div>
                                 <div class="col">
-                                   <a class="onHoverChange nav-link text-white oval" href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">Writings</a> 
+                                   <a class="onHoverChange nav-link text-white oval" href="./profile.html" target="/blank">Profile</a> 
+                                </div>
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="./competitions.html" target="/blank">Competitions</a> 
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="https://www.speedloopauto.com/" target="/blank">VISIT : SpeedLoop Auto</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="./research.html" target="/blank">Research</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="https://www.quora.com/profile/Aditya-Jadhav-49" target="/blank">Quora Profile</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="./publications.html" target="/blank">Publications</a> 
+                                </div>
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="./projects.html" target="/blank">Projects</a> 
                                 </div>
                             </div>
                         </div>
@@ -88,36 +94,44 @@
                     <div class="row shadow bg-light mt-4 mb-3 mx-1">
                         <h2 class="pt-4 pb-3 px-4 text-center" >About Me:</h2>
                         <p class="px-3">I am studying B.Tech <b>Naval Architecture and Ocean Engineering</b> and Inter Disciplinary Dual Degree (IDDD) <b>Robotics</b> at the Indian Institute of Technology Madras (IIT-M).</p>
-                        <p class="px-3">I am interested in Robotics and it's applications in Ocean Engineering. Currently I am working on an Automated Surface Vehicle Project wherein we are going to design an automated boat. To find more information about this project, please visit <a href="https://www.abhilash.consulting/research/asv-project" target="/blank">ASV Project</a>. </p>
-                        <p class="px-3">I have also written some articles about automobiles for a Startup named "Speedloop AUTO". You can have a check at it by clicking on the <a href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">link</a> or "Writings" on the top bar on the HomePage. Makesure you also visit the cool Startup <a href="https://www.speedloopauto.com/" target="/blank">SpeedLoop AUTO</a>. </p>
+                        <p class="px-3">I am a Robotics enthusiast interested in it's applications in the Marine frontier. Currently, I am working on an Autonomous Surface Vehicle Project <b>MATSYA</b>, where different Guidance and Control algorithms are being tested and implemented both in simulation and practical. A practical implementation and validation of the Integral LOS Guidance and PD Controller has been performed at the Institute Lake. More information about this can be found <a href="./publications.html" target="/blank">here (publications)</a>. To find more information about this project, please visit <a href="https://www.abhilash.consulting/research/asv-project" target="/blank">ASV Project</a>. Furthermore, various guidance and control algorithms for waypoint tracking and path following will be explored in the future. The traditional and reinforcement learning (RL) based controllers will also be implemented and validated.</p>
+                        <!-- <p class="px-3">I have also written some articles about automobiles for a Startup named "Speedloop AUTO". You can have a check at it by clicking on the <a href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">link</a> or "Writings" on the top bar on the HomePage. Makesure you also visit the cool Startup <a href="https://www.speedloopauto.com/" target="/blank">SpeedLoop AUTO</a>. </p> -->
+                        <!-- <p class="px-3">I am also a Cricket buff and love to play Cricket. I have also tried writing a few answers on Quora and have one written on Cricket. Make sure to read the <a href="https://qr.ae/pNrRIn" target="/blank">answer</a>. Make sure you also visit my Quora Profile to find more answers <a href="https://www.quora.com/profile/Aditya-Jadhav-49" target="/blank">(link)</a>. </p> -->
+                        <!-- <p class="px-3">Do visit my <a href="https://github.com/adityajadhav99/adityajadhav99.github.io" target="/blank">Git-Hub Page</a> also.</p> -->
+                    </div>
+                    <div class="row shadow bg-light mt-4 mb-3 mx-1">
+                        <h2 class="pt-4 pb-3 px-4 text-center" >Hobbies and Other Activities:</h2>
+                        <p class="px-3">I have also written some articles about automobiles for a Startup named "Speedloop AUTO". You can have a check at it by clicking on the <a href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">link</a> or "Writings" on the top bar on the HomePage. Make sure you also visit the cool Startup <a href="https://www.speedloopauto.com/" target="/blank">SpeedLoop AUTO</a>. </p> 
                         <p class="px-3">I am also a Cricket buff and love to play Cricket. I have also tried writing a few answers on Quora and have one written on Cricket. Make sure to read the <a href="https://qr.ae/pNrRIn" target="/blank">answer</a>. Make sure you also visit my Quora Profile to find more answers <a href="https://www.quora.com/profile/Aditya-Jadhav-49" target="/blank">(link)</a>. </p>
-                        <p class="px-3">Do visit my <a href="https://github.com/adityajadhav99/adityajadhav99.github.io" target="/blank">Git-Hub Page</a> also.</p>
+                        <!-- <p class="px-3">I have also written some articles about automobiles for a Startup named "Speedloop AUTO". You can have a check at it by clicking on the <a href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">link</a> or "Writings" on the top bar on the HomePage. Makesure you also visit the cool Startup <a href="https://www.speedloopauto.com/" target="/blank">SpeedLoop AUTO</a>. </p> -->
+                        <!-- <p class="px-3">I am also a Cricket buff and love to play Cricket. I have also tried writing a few answers on Quora and have one written on Cricket. Make sure to read the <a href="https://qr.ae/pNrRIn" target="/blank">answer</a>. Make sure you also visit my Quora Profile to find more answers <a href="https://www.quora.com/profile/Aditya-Jadhav-49" target="/blank">(link)</a>. </p> -->
+                        <!-- <p class="px-3">Do visit my <a href="https://github.com/adityajadhav99/adityajadhav99.github.io" target="/blank">Git-Hub Page</a> also.</p> -->
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="row shadow bg-light mt-4 mb-3 mx-1">
                         <div class="col">
-                            <img class="center mt-5 " src="./Aditya1.png" style="width: 200px; height:200px;border-radius:50%;box-shadow:0 5px 20px">
+                            <img class="center mt-5 " src="./images/Aditya1.png" style="width: 200px; height:200px;border-radius:50%;box-shadow:0 5px 20px">
                              <h3 class="pt-4 pb-3 px-4 text-center" >Contact Info:</h3>
                              <p class="px-3">E-mail Id: <a href="mailto:jadhav.aditya127@gmail.com">jadhav.aditya127@gmail.com</a> </p>
                              <p class="px-3">S-mail Id: <a href="mailto:na18b103@smail.iitm.ac.in">na18b103@smail.iitm.ac.in</a> </p>
-				<p class="px-3">LinkedIn Id: <a href="https://www.linkedin.com/in/aditya-jadhav-0913331a8/" target="/blank">Aditya Jadhav</a> </p>
-
+				            <p class="px-3">LinkedIn: <a href="https://www.linkedin.com/in/aditya-jadhav-0913331a8/" target="/blank">Aditya Jadhav</a> </p>
+                            <p class="px-3">GitHub: <a href="https://www.github.com/adityajadhav99/" target="/blank">adityajadhav99</a> </p>
                             <p class="px-3">Cell No.: <a href="tel:+91 8796042141">8796042141</a> </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8">
                     <div class="row shadow bg-light mt-4 mb-3 mx-1">
-                        <h2 class="pt-4 pb-3 px-4 text-center" > Professional Experience:</h2>
-                        <p class="px-3">I have worked for a Educational Content Provider Firm "Six Red Marbles Inc.". I was assigned on a task of finding solutions to Class 11, Class 12 level Mathematical Problems.</p>
-                        <p class="px-3">I have also worked as a junior Vehicle Dynamics Engineer for a Formula Racing Team (Raftaar Formula Racing, IIT Madras). </p>
+                        <h2 class="pt-4 pb-3 px-4 text-center" > Hobbies and Other Activities</h2>
+                        <p class="px-3">I have also written some articles about automobiles for a Startup named "Speedloop AUTO". You can have a check at it by clicking on the <a href="https://drive.google.com/drive/folders/1Rk6djCwseVGNkRq-2jcmrv_HVNDbWBQE?usp=sharing" target="/blank">link</a> or "Writings" on the top bar on the HomePage. Make sure you also visit the cool Startup <a href="https://www.speedloopauto.com/" target="/blank">SpeedLoop AUTO</a>. </p> 
+                        <p class="px-3">I am also a Cricket buff and love to play Cricket. I have also tried writing a few answers on Quora and have one written on Cricket. Make sure to read the <a href="https://qr.ae/pNrRIn" target="/blank">answer</a>. Make sure you also visit my Quora Profile to find more answers <a href="https://www.quora.com/profile/Aditya-Jadhav-49" target="/blank">(link)</a>. </p> 
                     </div>
                 </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
                 <div class="col-lg-6">
                     <div class="row shadow bg-light mt-4 mb-3 mx-1">
                         <h2 class="pt-4 pb-3 px-4 text-center" > Academics Activities:</h2>
@@ -125,6 +139,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
