@@ -2,7 +2,7 @@
 <html>
     <head>
 
-        <title>Aditya's HomePage</title>
+        <title>My Publications</title>
 
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,19 +15,19 @@
        
         <!-- META TAGS -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="description" content="Aditya's HomePage">
+        <meta name="description" content="My Publications">
         <meta name="author" content="Aditya Kailas Jadhav">
         <!-- <meta name="" content=""> -->
        
-        <meta property="og:title" content="Aditya's HomePage">
+        <meta property="og:title" content="My Publications">
         <meta property="og:image" content="./images/Aditya1.png">  <!--add image link here -->
-        <meta property="og:description" content="Aditya's HomePage">
+        <meta property="og:description" content="My Publications">
         
 
         <style type="text/css">
             body{
                 background: linear-gradient(to bottom,#444444 0%,#868686 350px, #EDEDED 350px,#EDEDED 100%);
-                font-family: Georgia, 'Times New Roman', Times, serif;font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;
             }
             .oval:hover {
                 height: 40px;
@@ -41,6 +41,12 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: 50%;
+            }
+            figcaption {
+            /* background-color: black; */
+            color: black;
+            font-style: italic;
+            text-align: center;
             }
         </style>
     </head>
@@ -100,7 +106,11 @@
                                 <h5>Abstract</h5>
                                 <p>Most ships that carry cargo from one place to another are underactuated. Therefore, controlling such vessels is challenging and even a few major accidents in the industry can be attributed to ineffective control by a human operator. Automated control can significantly aid in the prevention of such incidents. This paper demonstrates practical implementation of a path following algorithm for an underactuated scaled model of a container ship. Integral Line Of Sight (ILOS) guidance scheme along with Proportional Derivative (PD) rudder control law is implemented to track the path connecting a series of waypoints. For this study a 1:75.5 scaled free running model of the KRISO Container Ship (KCS) is chosen as the test ship. A numerical model of the vessel's dynamics was initially simulated to derive the optimal gains for the controller which were further tested and validated through field trials.</p>
                             </ul>
-                            <iframe class="center mt-3 mb-5" width="560" height="315" src="https://www.youtube.com/embed/HXuYBOn0awc" title="Waypoint Tracking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 600px; height:300px;box-shadow:0 5px 10px"></iframe>
+                            
+                            <iframe class="center mt-3 mb-3" width="560" height="315" src="https://www.youtube.com/embed/HXuYBOn0awc" title="Waypoint Tracking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 90%; ;box-shadow:0 5px 10px"></iframe>
+                            <figure class="center">
+                                <figcaption>Summary video of the paper</figcaption>
+                            </figure>
                             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/e22aLYKuI10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
                         </div>
