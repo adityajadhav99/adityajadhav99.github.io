@@ -1,0 +1,18 @@
+/* 
+image centering and scaling used in the projects html pages
+*/
+
+.image-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    /* padding-bottom: 20px; */
+    box-shadow:0 5px 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    object-position: center; /* normally it's the default value */
+  }

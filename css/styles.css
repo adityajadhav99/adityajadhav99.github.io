@@ -1,0 +1,69 @@
+body{
+    background: linear-gradient(to bottom,#444444 0%,#868686 350px, #EDEDED 350px,#EDEDED 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;font-size: 16px;
+}
+
+.oval:hover {
+    height: 40px;
+    width: 200px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.onHoverChange:hover{ background:rgb(255, 255, 255); 
+                        color:black !important;
+                        text-shadow: rgb(77, 76, 76); 
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8)
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 95%;
+    min-height: 95%
+}
+
+a:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    /* box-shadow: 0 5px 10px; */
+}
+
+figcaption {
+/* background-color: black; */
+padding-top: 20px;
+color: black;
+font-style: italic;
+text-align: center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  } */
+  
+  /* Clear floats after image containers */
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */

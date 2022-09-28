@@ -23,8 +23,10 @@
         <meta property="og:image" content="../images/Aditya1.png">  <!--add image link here -->
         <meta property="og:description" content="Waypoint Tracking">
         
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/image_centering.css">
 
-        <style type="text/css">
+        <!-- <style type="text/css">
             body{
                 background: linear-gradient(to bottom,#444444 0%,#868686 350px, #EDEDED 350px,#EDEDED 100%);
                 font-family: Georgia, 'Times New Roman', Times, serif;font-size: 14px;
@@ -55,7 +57,7 @@
             font-style: italic;
             text-align: center;
             }
-        </style>
+        </style> -->
     </head>
     
     <body>
@@ -67,33 +69,33 @@
                             <h3 class="text-white" style="text-align: left; font-family: 'Courier New', Courier, monospace;">Aditya Kailas Jadhav</h3>  
                         </div>
                         <div>
-                            <img src="../images/IIT-M logo.png"  style="width: 250px; height:90px;" align="right" >
+                            <img src="../images/IIT_Madras_Logo.svg.png"  style="width: 100%; height:100px;"align="right" >
                         </div>
                     </div>
                     <div class="row mt-4 mb-4 text-center">
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./index.html">Home</a>
+                                    <a class="onHoverChange nav-link text-white oval" href="../index.html">Home</a>
                                 </div>
                                 <div class="col">
-                                   <a class="onHoverChange nav-link text-white oval" href="./profile.html" target="/blank">Profile</a> 
+                                   <a class="onHoverChange nav-link text-white oval" href="../profile.html" target="/blank">Profile</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./competitions.html" target="/blank">Competitions</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../competitions.html" target="/blank">Competitions</a> 
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./research.html" target="/blank">Research</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../research.html" target="/blank">Research</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./publications.html" target="/blank">Publications</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../publications.html" target="/blank">Publications</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./projects.html" target="/blank">Projects</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../projects.html" target="/blank">Projects</a> 
                                 </div>
                             </div>
                         </div>
@@ -108,11 +110,24 @@
                         <h2 class="pt-4 pb-3 px-4 text-center">Autonomous Waypoint Tracking of an Underactuated Kriso Container Ship</h2>
                         <p class="px-3">A practical implementation and tuning of a guidance and control system for waypoint tracking of an underactuated unmanned surface vessel was performed. The algorithms were tested in a simulation environment with different gains on the controller.  To validate the simlation results a set of waypoint tracking experiments were performed. A PD controller with an integral line of sight guidance scheme was implemented and tested successfully.</p>                        
                         <figure class="center">
+                            <div class="image-container">
+                                <img src="../videos/wp_tracking.gif">
+                            </div>
+                            <figcaption>MATSYA tracking the waypoints both in practical and simulation</figcaption> 
+                        </figure>
+                        
+                        <!-- <figure class="center">
                             <img class="center mt-3 mb-3" src="../videos/wp_tracking.gif" style="width: 100%; box-shadow:0 5px 10px;">
                             <figcaption>Fig.1 - MATSYA tracking the waypoints both in practical and simulation</figcaption>
-                        </figure>
+                        </figure> -->
                         <p class="px-3">Model scale experiments were performed in the Institute lake of IIT Madras. The test vessel that we use for implementing and validating the guidance and control algorithms is a 1:75.5 scaled model of the Panamax class single screwed Kriso Container Ship (KCS), named as Matsya, designed and fabricated by the Marine Autonomous Vehicles (MAV) Laboratory, IIT Madras.</p>
                         <p class="px-3">The integral Line of sight guidance and a PD controller were simulated along with the dynamics of the vessel using the MMG mathematical model. The ILOS guidance scheme computes a desired heading angle that orients the heading of the vessel towards a point some fixed distance ahead along the line joining two successive waypoints. A tuned PD controller commands the control input to the vessel to track the desired heading generated by the guidance algorithm.</p> 
+                        <figure class="center">
+                            <div class="image-container">
+                                <img src="../images/guidance.png">
+                            </div>
+                            <figcaption>Integral Line of Sight Guidance Law</figcaption> 
+                        </figure>
                     </div>
                 </div>
             </div>

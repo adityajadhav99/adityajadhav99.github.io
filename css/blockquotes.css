@@ -1,0 +1,44 @@
+.blockquote{
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #f0f2f0;
+    border: 1px solid #898989;
+    /* #b0d2cb */
+    /* color: #0b4237; */
+    box-sizing: border-box;
+}
+
+.blockquote--quoted::before{
+    content: "\201c";
+    font-size: 50px;
+    /* color: #0b4237; */
+    /* margin-bottom: -10px;
+    margin-top: px; */
+}
+
+.blockquote--bordered{
+    border-left-width: 10px;
+}
+
+.blockquote__text{
+    font-family: 'Gelasio', serif;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.blockquote__text:not(:last-child){
+    margin-bottom: 1em;
+}
+
+.blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+.blockquote__text--credit::before{
+    content: "\2014";
+}

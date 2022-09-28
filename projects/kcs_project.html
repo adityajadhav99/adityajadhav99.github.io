@@ -23,8 +23,9 @@
         <meta property="og:image" content="../images/Aditya1.png">  <!--add image link here -->
         <meta property="og:description" content="Aditya's HomePage">
         
-
-        <style type="text/css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/image_centering.css">
+        <!-- <style type="text/css">
             body{
                 background: linear-gradient(to bottom,#444444 0%,#868686 350px, #EDEDED 350px,#EDEDED 100%);
                 font-family: Georgia, 'Times New Roman', Times, serif;font-size: 14px;
@@ -55,7 +56,7 @@
             font-style: italic;
             text-align: center;
             }
-        </style>
+        </style> -->
     </head>
     
     <body>
@@ -67,33 +68,33 @@
                             <h3 class="text-white" style="text-align: left; font-family: 'Courier New', Courier, monospace;">Aditya Kailas Jadhav</h3>  
                         </div>
                         <div>
-                            <img src="../images/IIT-M logo.png"  style="width: 250px; height:90px;" align="right" >
+                            <img src="../images/IIT_Madras_Logo.svg.png"  style="width: 100%; height:100px;"align="right" >
                         </div>
                     </div>
                     <div class="row mt-4 mb-4 text-center">
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./index.html">Home</a>
+                                    <a class="onHoverChange nav-link text-white oval" href="../index.html">Home</a>
                                 </div>
                                 <div class="col">
-                                   <a class="onHoverChange nav-link text-white oval" href="./profile.html" target="/blank">Profile</a> 
+                                   <a class="onHoverChange nav-link text-white oval" href="../profile.html" target="/blank">Profile</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./competitions.html" target="/blank">Competitions</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../competitions.html" target="/blank">Competitions</a> 
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6">
                             <div class="row text-white">
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./research.html" target="/blank">Research</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../research.html" target="/blank">Research</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./publications.html" target="/blank">Publications</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../publications.html" target="/blank">Publications</a> 
                                 </div>
                                 <div class="col">
-                                    <a class="onHoverChange nav-link text-white oval" href="./projects.html" target="/blank">Projects</a> 
+                                    <a class="onHoverChange nav-link text-white oval" href="../projects.html" target="/blank">Projects</a> 
                                 </div>
                             </div>
                         </div>
@@ -107,15 +108,20 @@
                     <div class="row shadow bg-light mt-4 mb-3 mx-1">
                         <h2 class="pt-4 pb-3 px-4 text-center" >Design and Fabrication of KRISO Container Ship</h2>
                         <p class="px-3">A 1:75.5 scaled model of the Panamax class single screwed Kriso Container Ship (KCS), named as Matsya, was designed and fabricated by the Marine Autonomous Vehicles (MAV) Laboratory, IIT Madras. The model is capable of self propulsion with the help of four 12 V (48 V total) batteries onboard. The heading is controlled using the rudder fitted behind the propeller. The rudder is actuated using an onboard stepper motor, which is a unipolar stepper. The propeller is powered by a 48 V brushless DC motor. The onboard electronics include a RaspBerry Pi 4 Single Board Computer (SBC) and two Arduino Uno microcontrollers. A 48 V to 12 V and a subsequent 12 V to 5 V stepdown is performed using the onboard electronics. All the electronics is compactly placed in an Ingress Protection Box with an IP rating of IP67.</p>                        
-                        <figure>
-                            <img class="center mt-3 mb-3" src="../images/kcs.jpg" style="box-shadow:0 5px 10px;">
-                            <figcaption>Fig.1 - Kriso Container Ship (MATSYA)</figcaption>
+                        <figure class="center">
+                            <div class="image-container">
+                                <img src="../images/kcs.jpg">
+                            </div>
+                            <figcaption>Kriso Container Ship (MATSYA)</figcaption> 
                         </figure>
                         <p class="px-3">The CAD modeling of the vessel along with the shafting arrangement was performed in AutoDesk Fusion 360 software. The resistance of the model was estimated based on appropriate scaling of the experimental results published on the web. Based on the resistance estimated the propulsion system requirements were formulated.</p>
                         <figure class="center">
-                            <img class="mt-3 mb-3" src="../videos/kcs_CAD_model.gif" style="box-shadow: 0 5px 10px;">
-                            <figcaption>Fig.2 - CAD Model</figcaption> 
+                            <div class="image-container">
+                                <img src="../videos/kcs_CAD_model.gif">
+                            </div>
+                            <figcaption>CAD Model</figcaption> 
                         </figure>
+                        <p class="px-3">The vehicle is currently being tested with different algorithms which include investigation of reinforcement learning-based control for trajectory tracking, cooperative control with other unmanned vehicles, testing of various under-actuated control algorithms, and investigating the effect of maneuvering in waves.</p>                        
                     </div>
                 </div>
             </div>
