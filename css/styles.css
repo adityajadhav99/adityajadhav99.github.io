@@ -80,21 +80,23 @@ a.fill-div {
     clear: both;
     display: table;
   } */
-  .button {
-    transition-duration: 0.4s;
-    border: none;
-    display: block;
-    float: left;
-  }
-  
-  .button:hover {
-    background-color: #ffffff; /* Green */
-    color: rgb(133, 28, 28);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
 
-/* input#hover{
-    background-color: #4c9ed9;
-  color: #ffffff;
-  padding: 20px 40px
-} */
+  .image-container img:hover {
+    filter: brightness(90%);
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8e8e8e;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8e8e8e;
+}
