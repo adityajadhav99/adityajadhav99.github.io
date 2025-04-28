@@ -100,19 +100,76 @@
                     <div class="row shadow bg-light mx-1 px-4 pt-5 pb-4">
                         <div class="col">
                             <h2>Publications</h2>
-                            <p>Last Updated: 16th September 2022</p>
+                            <p id="last-updated"></p>
+
+                            <script src="js\last-updated.js"></script>
+                            
                             <ul>
-                                <li><p><i><a target="_blank">V. Deogaonkar, <b><u>A. K. Jadhav</u></b>, J. Jose, M. Anand, and A. S. Somayajula, “Waypoint based path following of an underactuated autonomous marine vessel (submitted),” ICRA 2023, London, 2023.</a></i></p></li>
+                                <li>
+                                    <p><i>
+                                        <a href="https://doi.org/10.1016/j.oceaneng.2023.116011" target="_blank">
+                                            <b><u>Aditya Kailas Jadhav</u></b>, Anantha Raj Pandi, Abhilash Somayajula, 
+                                            “Collision Avoidance for Autonomous Surface Vessels Using Novel Artificial Potential Fields,” 
+                                            Ocean Engineering, Vol. 288, Part 2, 2023, 116011. Pergamon.
+                                        </a>
+                                    </i></p>
+                                </li>
                                 <h5>Abstract</h5>
-                                <p>Most ships that carry cargo from one place to another are underactuated. Therefore, controlling such vessels is challenging and even a few major accidents in the industry can be attributed to ineffective control by a human operator. Automated control can significantly aid in the prevention of such incidents. This paper demonstrates practical implementation of a path following algorithm for an underactuated scaled model of a container ship. Integral Line Of Sight (ILOS) guidance scheme along with Proportional Derivative (PD) rudder control law is implemented to track the path connecting a series of waypoints. For this study a 1:75.5 scaled free running model of the KRISO Container Ship (KCS) is chosen as the test ship. A numerical model of the vessel's dynamics was initially simulated to derive the optimal gains for the controller which were further tested and validated through field trials.</p>
+                                <p>
+                                    As the demand for transportation through waterways continues to rise, the number of vessels plying the waters has correspondingly increased. 
+                                    This has resulted in a greater number of accidents and collisions between ships, some of which lead to significant loss of life and financial losses. 
+                                    Research has shown that human error is a major factor responsible for such incidents. 
+                                    The maritime industry is constantly exploring newer approaches to autonomy to mitigate this issue. 
+                                    This study presents the use of novel Artificial Potential Fields (APFs) to perform obstacle and collision avoidance in marine environments. 
+                                    This study highlights the advantage of harmonic functions over traditional functions in modeling potential fields. 
+                                    With a modification, the method is extended to effectively avoid dynamic obstacles while adhering to COLREGs. 
+                                    Improved performance is observed as compared to the traditional potential fields and also against the popular velocity obstacle approach. 
+                                    A comprehensive statistical analysis is also performed through Monte Carlo simulations in different congested environments that emulate real traffic conditions to demonstrate robustness of the approach.
+                                </p>
                             </ul>
                             
-                            <iframe class="center mt-3 mb-3" width="560" height="315" src="https://www.youtube.com/embed/HXuYBOn0awc" title="Waypoint Tracking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 90%; ;box-shadow:0 5px 10px"></iframe>
-                            <figure class="center">
-                                <figcaption>Summary video of the paper</figcaption>
+                            <figure class="center mt-3 mb-3" style="text-align: center;">
+                                <img src="images/research-paper.png" alt="Collision Avoidance Demonstration" style="width: 110%; max-width: 560px; height: auto; box-shadow: 0 5px 10px;">
+                                <figcaption>Monte Carlo simulations in different congested environments</figcaption>
                             </figure>
-                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/e22aLYKuI10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            
 
+                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/e22aLYKuI10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            <ul>
+                                <li>
+                                    <p><i><a target="_blank" href="https://doi.org/10.1115/OMAE2023-104644">
+                                        V. V. Deogaonkar, <b><u>A. K. Jadhav</u></b>, K. Ramachandran, and A. S. Somayajula, 
+                                        “Data Driven Identification of Ship Maneuvering Coefficients,” 
+                                        Proceedings of the ASME 2023 42nd International Conference on Ocean, Offshore and Arctic Engineering (OMAE2023), 
+                                        Volume 5: Ocean Engineering, V005T06A050, Melbourne, Australia.
+                                    </a></i></p>
+                                </li>
+                            
+                                <h5>Abstract</h5>
+                                <p>
+                                    Maneuvering models of a ship are quite complex and require accurate knowledge of the various hydrodynamic derivatives and coefficients to model the maneuvering trajectories undertaken by a ship accurately. 
+                                    Discerning these coefficients through practical tests in specialized facilities is expensive and time-consuming. Data-driven identification of the ship maneuvering coefficients using free-running model data is a possible alternative. 
+                                    In this study, the maneuvering motions of the KCS hull are simulated using the MMG model, which are then used as a starting point to identify an Abkowitz model for the vessel. 
+                                    The coefficients of the Abkowitz model are predicted without presuming any knowledge of the MMG model used to generate the data. 
+                                    Three different approaches — Least squares, LASSO optimization, and Support Vector Machines — are used to identify the hydrodynamic coefficients of the Abkowitz model. 
+                                    The identified coefficients are used to generate test trajectories not seen in training data and are compared with the MMG model to verify that the dynamics are accurately captured. 
+                                    The common issue of parameter drift occurring due to the problem being ill-posed is discussed, and sparsity-based solutions are suggested to overcome them.
+                                </p>
+                            </ul>
+                            
+                            <figure class="center mt-3 mb-3" style="text-align: center;">
+                                <img src="images/formation-of-regression-equations.png" alt="Regression Equations" 
+                                     style="width: 90%; max-width: 560px; height: auto; box-shadow: 0 5px 10px; border-radius: 10px;">
+                                <figcaption>Regression equations</figcaption>
+                            </figure>
+                            
+                            <figure class="center mt-3 mb-3" style="text-align: center;">
+                                <img src="images/starboard-circle-conferencepaper.png" alt="Comparison of different techniques for system identification" 
+                                     style="width: 90%; max-width: 560px; height: auto; box-shadow: 0 5px 10px; border-radius: 10px;">
+                                <figcaption>Comparison of different techniques for system identification</figcaption>
+                            </figure>
+                            
+                            
                         </div>
                     </div>
                 </div>
