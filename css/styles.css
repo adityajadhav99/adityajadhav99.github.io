@@ -100,3 +100,8 @@ a.fill-div {
 .button:hover {
     background-color: #8e8e8e;
 }
+
+.card-lift:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}

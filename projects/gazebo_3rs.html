@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-84NB9NQ1V9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-84NB9NQ1V9');
+        </script>
+
+        <title>Building and Controlling a Robot in Gazebo</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="../images/Aditya1.png" >
+       
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Building and Controlling a Robot in Gazebo">
+        <meta name="author" content="Aditya Kailas Jadhav">
+       
+        <meta property="og:title" content="Building and Controlling a Robot in Gazebo">
+        <meta property="og:image" content="../images/Aditya1.png">
+        <meta property="og:description" content="Building and Controlling a Robot in Gazebo">
+        
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/image_centering.css">
+    </head>
+    
+    <body>
+        <div class = "container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <h3 class="text-white" style="text-align: left; font-family: 'Courier New', Courier, monospace;">Aditya Kailas Jadhav</h3>  
+                        </div>
+                        <div>
+                            <img src="../images/IIT_Madras_Logo.svg.png"  style="width: 100%; height:100px;"align="right" >
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-4 text-center">
+                        <div class="col-xl-6">
+                            <div class="row text-white">
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="../index.html">Home</a>
+                                </div>
+                                <div class="col">
+                                   <a class="onHoverChange nav-link text-white oval" href="../profile.html">Profile</a> 
+                                </div>
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="../competitions.html">Competitions</a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="row text-white">
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="../research.html">Research</a> 
+                                </div>
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="../publications.html">Publications</a> 
+                                </div>
+                                <div class="col">
+                                    <a class="onHoverChange nav-link text-white oval" href="../projects.html">Projects</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row shadow bg-light mt-4 mb-3 mx-1 p-4">
+                        <div class="col-12">
+                            <h2 class="pt-4 pb-3 text-center" >Building and Controlling a Robot in Gazebo using OpenCV</h2>
+                            <p class="px-3">
+                                This project involved building a three-degree-of-freedom (3-DOF) robotic manipulator and controlling it within the Gazebo simulator using the Robot Operating System <b>(ROS)</b>. The robot was constructed from a URDF file, adding a continuous joint to provide an extra degree of freedom along the z-axis.
+                            </p>
+                            <figure class="center">
+                                <div class="image-container">
+                                    <img src="../projects/images/gazebo_3rs_manipulator.png">
+                                </div>
+                                <figcaption>3-DOF Manipulator in Gazebo</figcaption> 
+                            </figure>
+                            <h4 class="pt-4 pb-2 text-center">Object Detection and Control</h4>
+                            <p class="px-3 mt-3">
+                                A camera was fixed to the manipulator's tip to detect a coke can placed randomly in the environment. The control script commands the robot to explore its workspace until the object is found. Object detection was achieved using <b>OpenCV</b> color segmentation. An HSV mask was calibrated to isolate the can from the background. When the number of non-zero pixels in the masked image exceeded a threshold of 60, a flag was published on a ROS topic to stop the robot's movement.
+                            </p>
+                            <figure class="center">
+                                <div class="image-container">
+                                    <img src="../projects/images/gazebo_3rs_opncv_results.png">
+                                </div>
+                                <figcaption>OpenCV Results</figcaption> 
+                            </figure>
+                             <h4 class="pt-4 pb-2 text-center">Trajectory Visualization</h4>
+                            <p class="px-3 mt-3">
+                                To analyze the robot's movement, forward kinematics equations were implemented to calculate the end-effector's position in x, y, and z coordinates. These coordinates were then published on a ROS topic and plotted using the <b>rqt_gui</b> package, providing a real-time visualization of the robot's trajectory until it successfully located the object.
+                            </p>
+                            <figure class="center">
+                                <div class="image-container">
+                                    <img src="../projects/images/gazebo_3rs_joints_trajectory.png">
+                                </div>
+                                <figcaption>x, y, z trajectories of the 3RS</figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
