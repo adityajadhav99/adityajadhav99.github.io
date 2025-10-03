@@ -88,6 +88,12 @@
                 pointer-events: none;
             }
         </style>
+        <style>
+            /* Add this new style block or merge with an existing one */
+            #mediaModal .modal-body {
+                text-align: center; /* Center the image inside the modal body */
+            }
+        </style>
     </head>
     
     <body>
@@ -148,8 +154,8 @@
                         <div class="row">
                             <!-- Gallery Item 1 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
-                                <img src="./images/oceans2022_award.jpg" alt="Receiving award at OCEANS 2022" class="shadow" data-toggle="modal" data-target="#mediaModal">
-                                <p class="text-center small mt-2"><em>Receiving the first prize at the OCEANS 2022 Hackathon.</em></p>
+                                <img src="./images/gallery/me_at_the_lake_candid.jpg" alt="Candid Me at the Lake" class="shadow" data-toggle="modal" data-target="#mediaModal">
+                                <p class="text-center small mt-2"><em>Me at the field trials with MATSYA.</em></p>
                             </div>
                             <!-- Gallery Item 2 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
@@ -158,32 +164,33 @@
                             </div>
                             <!-- Gallery Item 3 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
-                                <img src="./images/oceans2022_work.jpg" alt="Working at OCEANS 2022 Hackathon" class="shadow" data-toggle="modal" data-target="#mediaModal">
-                                <p class="text-center small mt-2"><em>Hard at work during the OCEANS 2022 Hackathon.</em></p>
+                                <img src="./images/gallery/me_getting_the degree.jpg" alt="Me getting the college degree" class="shadow" data-toggle="modal" data-target="#mediaModal">
+                                <p class="text-center small mt-2"><em>Me getting the B.Tech. + M.Tech. Dual Degree at IIT Madras.</em></p>
                             </div>
                             <!-- Gallery Item 4 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
-                                <img src="./images/kcs.jpg" alt="MATSYA Autonomous Surface Vehicle" class="shadow" data-toggle="modal" data-target="#mediaModal">
-                                <p class="text-center small mt-2"><em>Our Autonomous Surface Vehicle, MATSYA.</em></p>
+                                <img src="./images/gallery/me_at_magnetic_hills.jpg" alt="Magnetic Hills Ladakh" class="shadow" data-toggle="modal" data-target="#mediaModal">
+                                <p class="text-center small mt-2"><em>Magnetic Hills Ladakh</em></p>
                             </div>
                             <!-- Gallery Item 5 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
-                                <img src="./images/colregs.jpg" alt="COLREGs rules diagram" class="shadow" data-toggle="modal" data-target="#mediaModal">
-                                <p class="text-center small mt-2"><em>A diagram of the COLREGs rules for vessel encounters.</em></p>
+                                <img src="./images/gallery/me_at_pangong_lake.jpg" alt="Me at Pangong Lake" class="shadow" data-toggle="modal" data-target="#mediaModal">
+                                <p class="text-center small mt-2"><em>Me during a trip to Ladakh, Pangong Lake</em></p>
                             </div>
                             <!-- Gallery Item 6 -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
-                                <div class="video-thumb">
-                                    <img src="./images/gazebo_3rs.png" alt="3-DOF Robot in Gazebo" class="shadow" data-toggle="modal" data-target="#mediaModal" data-type="video" data-src="https://www.youtube.com/embed/t3h5r1EDMPw">
-                                </div>
-                                <p class="text-center small mt-2"><em>Glimpse of Field Trials with MATSYA (Video).</em></p>
+                                    <img src="./images/gallery/kargil2srinagar.jpg" alt="Travelling from Kargil to Srinagar" class="shadow" data-toggle="modal" data-target="#mediaModal">
+                                <p class="text-center small mt-2"><em>A road trip from Kargil to Srinagar.</em></p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 gallery-item">
+
                             </div>
                             <!-- Gallery Item 7 (Video Placeholder) -->
                             <div class="col-lg-4 col-md-6 mb-4 gallery-item">
                                 <div class="video-thumb">
-                                    <img src="./images/kcs.jpg" alt="Sample YouTube Video" class="shadow" data-toggle="modal" data-target="#mediaModal" data-type="video" data-src="https://www.youtube.com/embed/t3h5r1EDMPw?si=3RBIBHyePzzWigfp">
+                                    <img src="./images/gallery/naldurg.png" alt="Naldurg Fort Dharashiv" class="shadow" data-toggle="modal" data-target="#mediaModal" data-type="video" data-src="https://www.youtube.com/embed/hwvWLCtjMwQ?si=jzS1xsmUI0Sp1wVc">
                                 </div>
-                                <p class="text-center small mt-2"><em>A sample YouTube video.</em></p>
+                                <p class="text-center small mt-2"><em>Naldurg Fort at Dharashiv.</em></p>
                             </div>
                             <!-- Add more gallery items here by copying the blocks above -->
                         </div>
@@ -204,7 +211,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <!-- Image container -->
-                        <img src="" id="modalImage" class="img-fluid w-100" alt="Enlarged gallery image" style="display: none;">
+                        <img src="" id="modalImage" class="img-fluid" alt="Enlarged gallery image" style="display: none; max-height: 90vh;">
                         <!-- Video container -->
                         <div class="embed-responsive embed-responsive-16by9" id="modalVideoContainer" style="display: none;">
                             <iframe id="modalVideo" class="embed-responsive-item" src="" allowfullscreen allow="autoplay"></iframe>
