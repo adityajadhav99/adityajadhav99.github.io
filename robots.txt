@@ -1,0 +1,7 @@
+# robots.txt for https://adityajadhav99.github.io/
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://adityajadhav99.github.io/sitemap.xml
+

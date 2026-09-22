@@ -1,44 +1,52 @@
-.blockquote{
-    max-width: 600px;
-    margin: 15px auto;
-    padding: 15px;
-    background: #f0f2f0;
-    border: 1px solid #898989;
-    /* #b0d2cb */
-    /* color: #0b4237; */
+.blockquote {
+    max-width: 680px;
+    margin: 1.75rem auto;
+    padding: 1.25rem 1.5rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
     box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.blockquote--quoted::before{
+.blockquote--quoted::before {
     content: "\201c";
-    font-size: 50px;
-    /* color: #0b4237; */
-    /* margin-bottom: -10px;
-    margin-top: px; */
+    font-size: 42px;
+    line-height: 1;
+    color: #2563eb;
+    display: block;
+    margin-bottom: -10px;
+    font-family: Georgia, serif;
 }
 
-.blockquote--bordered{
-    border-left-width: 10px;
+.blockquote--bordered {
+    border-left-width: 5px;
 }
 
-.blockquote__text{
-    font-family: 'Gelasio', serif;
+.blockquote__text {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
     font-style: italic;
-    font-size: 1.15em;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #334155;
     margin: 0;
 }
 
-.blockquote__text:not(:last-child){
-    margin-bottom: 1em;
+.blockquote__text:not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 
-.blockquote__text--credit{
-    font-weight: bold;
+.blockquote__text--credit {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
     font-style: normal;
+    font-size: 0.925rem;
+    color: #64748b;
     text-align: right;
+    margin-top: 0.5rem;
 }
 
-.blockquote__text--credit::before{
-    content: "\2014";
+.blockquote__text--credit::before {
+    content: "\2014\00a0";
 }
