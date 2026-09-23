@@ -147,3 +147,4 @@ All original textual content, course descriptions, research summaries, publicati
    - The Google Tag (`G-84NB9NQ1V9`) is currently embedded. Verify property ownership in Google Search Console to monitor search indexing and Core Web Vitals in production.
 3. **CDN Caching**:
    - GitHub Pages automatically provides Fastly CDN edge caching with HTTPS, ensuring low latency globally.
+
