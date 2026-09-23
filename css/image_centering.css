@@ -6,6 +6,7 @@
 .image-container {
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
     margin: 1.25rem auto;
     display: flex;
     justify-content: center;
@@ -14,12 +15,14 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
+    border: 1px solid var(--card-border, #e2e8f0);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
+    min-width: 0;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -27,4 +30,11 @@
 
 .image-container:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 575.98px) {
+    .image-container {
+        margin: 1rem auto;
+        border-radius: 8px;
+    }
 }
