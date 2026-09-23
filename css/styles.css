@@ -363,6 +363,20 @@ figcaption {
     text-decoration: none !important;
 }
 
+.footer-social-link svg {
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+/* Google Scholar Authentic Vector Icon */
+.bi-google-scholar {
+    display: inline-block;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 991.98px) {
     body {
