@@ -127,6 +127,39 @@
                             <h1 class="h2 mb-0" style="color: var(--text-primary); font-weight: 700;">Publications</h1>
                             <span id="last-updated" class="text-muted small mt-2 mt-sm-0">Last Updated: March 2025</span>
                         </div>
+
+                        <!-- Citation Summary Banner -->
+                        <div class="citation-summary-card">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                                <div class="citation-metric-group">
+                                    <div class="citation-main-stat">
+                                        <span id="total-citations-val" class="citation-big-number">51</span>
+                                        <span class="citation-stat-label">Total Citations</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <span class="citation-sub-stat">
+                                            <span>h-index:</span> <strong id="h-index-val">2</strong>
+                                        </span>
+                                        <span class="citation-sub-stat">
+                                            <span>i10-index:</span> <strong id="i10-index-val">1</strong>
+                                        </span>
+                                        <span class="citation-sub-stat">
+                                            <span>Publications:</span> <strong>2</strong>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-sm-end gap-1">
+                                    <a href="https://scholar.google.com/citations?user=gYYQk30AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1 font-weight-bold d-inline-flex align-items-center gap-1 shadow-sm">
+                                        <svg class="bi bi-google-scholar" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                                        Google Scholar Profile <i class="bi bi-box-arrow-up-right ms-1 small" aria-hidden="true"></i>
+                                    </a>
+                                    <span class="citation-live-pill mt-1">
+                                        <span class="pulse-dot" aria-hidden="true"></span>
+                                        <span id="citation-sync-status">Google Scholar Sync</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                         
                         <!-- Paper 1 -->
                         <section class="mb-5 pb-4 border-bottom">
@@ -141,9 +174,17 @@
                                     <i>Ocean Engineering</i>, Vol. 288, Part 2, 2023, 116011. Pergamon.
                                 </a>
                             </h2>
-                            <p class="small text-muted mb-3">
-                                DOI: <a href="https://doi.org/10.1016/j.oceaneng.2023.116011" target="_blank" rel="noopener noreferrer">10.1016/j.oceaneng.2023.116011</a>
-                            </p>
+                            <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                                <span class="small text-muted">
+                                    DOI: <a href="https://doi.org/10.1016/j.oceaneng.2023.116011" target="_blank" rel="noopener noreferrer">10.1016/j.oceaneng.2023.116011</a>
+                                </span>
+                                <span class="text-muted d-none d-sm-inline">•</span>
+                                <a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17630434691432960012" target="_blank" rel="noopener noreferrer" class="citation-badge" id="cite-badge-oceaneng" title="View citing articles on Google Scholar">
+                                    <i class="bi bi-quote" aria-hidden="true"></i>
+                                    <span class="citation-num">42</span> Citations on Google Scholar
+                                    <i class="bi bi-box-arrow-up-right ms-1 small" aria-hidden="true"></i>
+                                </a>
+                            </div>
                             
                             <h3 class="h6 font-weight-bold text-dark mt-3 mb-2">Abstract</h3>
                             <p class="text-secondary" style="font-size: 0.96rem; line-height: 1.65;">
@@ -180,9 +221,17 @@
                                     Volume 5: Ocean Engineering, V005T06A050, Melbourne, Australia.
                                 </a>
                             </h2>
-                            <p class="small text-muted mb-3">
-                                DOI: <a href="https://doi.org/10.1115/OMAE2023-104644" target="_blank" rel="noopener noreferrer">10.1115/OMAE2023-104644</a>
-                            </p>
+                            <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+                                <span class="small text-muted">
+                                    DOI: <a href="https://doi.org/10.1115/OMAE2023-104644" target="_blank" rel="noopener noreferrer">10.1115/OMAE2023-104644</a>
+                                </span>
+                                <span class="text-muted d-none d-sm-inline">•</span>
+                                <a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13141983219490277131" target="_blank" rel="noopener noreferrer" class="citation-badge" id="cite-badge-omae" title="View citing articles on Google Scholar">
+                                    <i class="bi bi-quote" aria-hidden="true"></i>
+                                    <span class="citation-num">9</span> Citations on Google Scholar
+                                    <i class="bi bi-box-arrow-up-right ms-1 small" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         
                             <h3 class="h6 font-weight-bold text-dark mt-3 mb-2">Abstract</h3>
                             <p class="text-secondary" style="font-size: 0.96rem; line-height: 1.65;">
@@ -220,7 +269,7 @@
                 <div class="mb-3">
                     <a href="https://www.linkedin.com/in/aditya-jadhav-0913331a8/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn Profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
                     <a href="https://www.github.com/adityajadhav99/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub Repository"><i class="bi bi-github" aria-hidden="true"></i></a>
-                    <a href="https://scholar.google.com/scholar?q=author%3A%22Aditya+Kailas+Jadhav%22" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Google Scholar Publications"><svg class="bi bi-google-scholar" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+                    <a href="https://scholar.google.com/citations?user=gYYQk30AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Google Scholar Publications"><svg class="bi bi-google-scholar" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
                     <a href="mailto:jadhav.aditya127@gmail.com" class="footer-social-link" aria-label="Send Email"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
                 </div>
                 <p class="mb-1">&copy; 2025 Aditya Kailas Jadhav. All rights reserved.</p>
@@ -233,5 +282,6 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="js/include.js"></script>
+        <script src="js/citations.js"></script>
     </body>
 </html>
