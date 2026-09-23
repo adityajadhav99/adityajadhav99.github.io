@@ -229,6 +229,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="text-center mt-4 mb-2">
+                    <a href="#main-content" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 shadow-sm">
+                        <i class="bi bi-arrow-up-short me-1" aria-hidden="true"></i> Back to Top
+                    </a>
+                </div>
             </section>
 
             <!-- ===================================================================
@@ -350,6 +356,12 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="text-center mt-4 mb-2">
+                    <a href="#main-content" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 shadow-sm">
+                        <i class="bi bi-arrow-up-short me-1" aria-hidden="true"></i> Back to Top
+                    </a>
+                </div>
             </section>
 
             <!-- ===================================================================
@@ -407,6 +419,12 @@
                         </button>
                     </article>
                 </div>
+
+                <div class="text-center mt-4 mb-2">
+                    <a href="#main-content" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 shadow-sm">
+                        <i class="bi bi-arrow-up-short me-1" aria-hidden="true"></i> Back to Top
+                    </a>
+                </div>
             </section>
         </main>
 
@@ -456,6 +474,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Floating Back to Top Button -->
+        <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
 
         <!-- Footer Landmark -->
         <footer class="site-footer">
@@ -608,6 +631,25 @@
                         $('#essayDynamicContent').html(contentHtml);
                     }
                 });
+
+                // Floating Back to Top Button handler
+                const backToTopBtn = document.getElementById('backToTopBtn');
+                if (backToTopBtn) {
+                    window.addEventListener('scroll', function() {
+                        if (window.pageYOffset > 350) {
+                            backToTopBtn.classList.add('visible');
+                        } else {
+                            backToTopBtn.classList.remove('visible');
+                        }
+                    }, { passive: true });
+
+                    backToTopBtn.addEventListener('click', function() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
             });
         </script>
     </body>
