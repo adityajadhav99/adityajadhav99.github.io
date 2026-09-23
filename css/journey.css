@@ -1,0 +1,445 @@
+/* ==========================================================================
+   journey.css - Timeline, Gallery Lightbox, and Blog/Essay Styles
+   Aditya Kailas Jadhav - Personal Journey & Life Page
+   ========================================================================== */
+
+/* Section Jump Navigation Pills */
+.journey-jump-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.journey-jump-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.15rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background-color: #ffffff;
+    border: 1px solid var(--card-border);
+    border-radius: 9999px;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.journey-jump-btn:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.journey-jump-btn i {
+    color: var(--primary-color);
+}
+
+/* Section Header Styling */
+.section-heading-wrapper {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.section-heading-wrapper h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.section-heading-wrapper p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   Section 1: Interactive Milestones Timeline
+   ========================================================================== */
+
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 3.5rem auto;
+    padding: 1rem 0;
+}
+
+/* Center vertical spine line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, #93c5fd 50%, var(--primary-color) 100%);
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Timeline Item Container */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 0 2rem 2.5rem 2rem;
+    box-sizing: border-box;
+}
+
+/* Alternating Left / Right sides */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Circular Icon Node */
+.timeline-badge {
+    position: absolute;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    box-shadow: 0 0 0 5px #ffffff, var(--shadow-md);
+    z-index: 2;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-badge {
+    right: -22px;
+}
+
+.timeline-item:nth-child(even) .timeline-badge {
+    left: -22px;
+}
+
+.timeline-item:hover .timeline-badge {
+    transform: scale(1.15);
+    background: var(--primary-hover);
+}
+
+/* Timeline Content Card */
+.timeline-card {
+    background: #ffffff;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.timeline-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+}
+
+.timeline-date-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    background-color: #eff6ff;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    margin-bottom: 0.6rem;
+}
+
+.timeline-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-card p {
+    font-size: 0.925rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.timeline-photo-thumb {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-top: 0.85rem;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.timeline-photo-thumb:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile responsive timeline (single column on small screens) */
+@media (max-width: 767.98px) {
+    .timeline-container::before {
+        left: 24px;
+    }
+
+    .timeline-item {
+        width: 100% !important;
+        left: 0 !important;
+        padding-left: 60px !important;
+        padding-right: 0.5rem !important;
+        text-align: left !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-badge,
+    .timeline-item:nth-child(even) .timeline-badge {
+        left: 2px !important;
+        right: auto !important;
+    }
+}
+
+/* ==========================================================================
+   Section 2: Adventures & Heritage Gallery
+   ========================================================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.gallery-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--card-border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lift);
+}
+
+.gallery-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: #0f172a;
+}
+
+.gallery-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-image-wrapper img {
+    transform: scale(1.06);
+}
+
+/* Play button overlay for video cards */
+.video-play-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.gallery-card:hover .video-play-indicator {
+    transform: translate(-50%, -50%) scale(1.15);
+    background: var(--primary-color);
+}
+
+.gallery-card-body {
+    padding: 1.1rem 1.25rem;
+}
+
+.gallery-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.gallery-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.gallery-card-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Section 3: Writings & Thoughts (The Blog)
+   ========================================================================== */
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.75rem;
+    margin-bottom: 3.5rem;
+}
+
+.blog-card {
+    background: #ffffff;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lift);
+    border-color: #cbd5e1;
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.blog-badge {
+    background-color: #eff6ff;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+}
+
+.blog-read-time {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.blog-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 0.85rem;
+}
+
+.blog-card-excerpt {
+    font-size: 0.93rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.blog-read-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.blog-read-btn:hover {
+    color: var(--primary-hover);
+    transform: translateX(3px);
+}
+
+/* Modal Essay Reader Styling */
+.modal-essay-header {
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modal-essay-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.modal-essay-meta {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.modal-essay-body p {
+    font-size: 1.025rem;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 1.25rem;
+}
+
+.modal-essay-body blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+    background-color: #f8fafc;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.modal-essay-body h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
