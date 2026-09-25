@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-09-23T19:05:51Z",
+  "last_updated": "2026-09-25T12:30:24Z",
   "author": "Aditya Kailas Jadhav",
   "scholar_user_id": "gYYQk30AAAAJ",
   "scholar_profile_url": "https://scholar.google.com/citations?user=gYYQk30AAAAJ&hl=en",
-  "total_citations": 51,
+  "total_citations": 53,
   "h_index": 2,
-  "i10_index": 1,
+  "i10_index": 2,
   "papers": {
     "10.1016/j.oceaneng.2023.116011": {
       "id": "oceaneng-2023",
       "title": "Collision Avoidance for Autonomous Surface Vessels Using Novel Artificial Potential Fields",
-      "citations": 42,
+      "citations": 43,
       "scholar_view_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gYYQk30AAAAJ&citation_for_view=gYYQk30AAAAJ:UeHWp8X0CEIC",
       "scholar_cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17630434691432960012"
     },
     "10.1115/OMAE2023-104644": {
       "id": "omae-2023",
       "title": "Data Driven Identification of Ship Maneuvering Coefficients",
-      "citations": 9,
+      "citations": 10,
       "scholar_view_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gYYQk30AAAAJ&citation_for_view=gYYQk30AAAAJ:qjMakFHDy7sC",
       "scholar_cites_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13141983219490277131"
     }
